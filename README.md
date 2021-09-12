@@ -1,11 +1,12 @@
-# reactive-group
+# reactive message gateway
 
 [![Gitter Chat](https://badges.gitter.im/Join%20Chat.svg)](https://groups.google.com/g/reactive-group)
 
-Reactive Group Bill Of Materials.
+Reactive Message Gateway.
 
-## Articles
-+ [Reactive模式在Trip.com消息推送平台上的实践](https://mp.weixin.qq.com/s/gQYZGQVwqWF3LOH51JAOwg)
+## Introduction
+
+反应式消息发送平台
 
 ## Contributing
 
