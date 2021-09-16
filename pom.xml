@@ -49,6 +49,12 @@
         <module>rmg-processor</module>
         <module>rmg-subscriber</module>
         <module>rmg-core</module>
+
+        <module>rmg-email-core</module>
+        <module>rmg-email-core-aws</module>
+        <module>rmg-email-subscriber-aws</module>
+        <module>rmg-email-interface-webflux-aws</module>
+        <module>rmg-email-interface-rsocket-aws</module>
     </modules>
 
     <properties>
@@ -57,6 +63,7 @@
         <maven.version>3.8.1</maven.version>
         <cloud-runtimes.version>1.0.1.RELEASE</cloud-runtimes.version>
         <reactor-core.version>3.3.11.RELEASE</reactor-core.version>
+        <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
         <junit.version>4.13.1</junit.version>
         <mockito-core.version>3.6.0</mockito-core.version>
     </properties>
@@ -84,6 +91,27 @@
                 <artifactId>reactive-message-gateway-subscriber</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>group.rxcloud</groupId>
+                <artifactId>reactive-message-gateway-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>group.rxcloud</groupId>
+                <artifactId>reactive-message-gateway-email-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>group.rxcloud</groupId>
+                <artifactId>reactive-message-gateway-email-core-aws</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>group.rxcloud</groupId>
+                <artifactId>reactive-message-gateway-email-subscriber-aws</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
             <!-- cloud-runtimes-api -->
             <dependency>
@@ -97,6 +125,15 @@
                 <groupId>io.projectreactor</groupId>
                 <artifactId>reactor-core</artifactId>
                 <version>${reactor-core.version}</version>
+            </dependency>
+
+            <!-- spring -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
             <!-- unit test -->

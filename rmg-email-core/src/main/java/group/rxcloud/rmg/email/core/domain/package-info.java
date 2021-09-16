@@ -1,0 +1,1 @@
+package group.rxcloud.rmg.email.core.domain;
